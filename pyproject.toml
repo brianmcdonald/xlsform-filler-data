@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "xlsform-filler-data"
+version = "0.1.0"
+description = "A tool for generating fake testing data based on an XLSform. "
+authors = ["Brian Mc Donald <brian@brianmcdonald.me>"]
+readme = "README.md"
+packages = [{include = "xlsform_filler_data"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.0.0"
+openpyxl = "^3.1.2"
+click = "^8.1.3"
+lorem-text = "^2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+xlsform_filler_data = "xlsform_filler_data.xlsform_filler_data:cli"
